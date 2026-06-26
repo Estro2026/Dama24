@@ -2353,8 +2353,9 @@
     @media (max-width: 768px) {
       .br-mobile { display: block; }
       .form__submit { font-size: 0.72rem; letter-spacing: 0.04em; padding: 0.85rem 0.75rem; white-space: normal; line-height: 1.4; }
-      #servizi .servizi__categorie { flex-wrap: wrap; flex-direction: row; }
-      #servizi .servizi__cat { padding: 0 0.5rem; }
+      #servizi .servizi__categorie { display: block; line-height: 1.9; }
+      #servizi .servizi__cat, #servizi .servizi__cat-sep { display: inline; }
+      #servizi .servizi__cat { padding: 0 0.15rem; }
       #servizi .servizi__cat:first-child { padding-left: 0; }
     }
 
@@ -2984,7 +2985,7 @@
     <div class="why__content">
       <span class="label section__eyebrow" style="color:#F5F3EC;">Perché Dama24</span>
       <h2 class="section__title" id="why-title">
-        Perché scegliere il servizio<br/>Private Chef di&nbsp;Dama24
+        Perché scegliere il&nbsp;servizio<br/>Private Chef di&nbsp;Dama24
       </h2>
 
       <ul class="why__list reveal-stagger" aria-label="Punti di forza Dama24">
