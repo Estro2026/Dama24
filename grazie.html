@@ -77,15 +77,9 @@
       background: transparent;
       transition: background 0.3s, box-shadow 0.3s;
     }
-    .nav.scrolled {
-      background: var(--white);
-      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
-    }
     .nav__logo { height: 56px; width: auto; }
     .nav__logo--white { display: block; }
     .nav__logo--dark  { display: none; }
-    .nav.scrolled .nav__logo--white { display: none; }
-    .nav.scrolled .nav__logo--dark  { display: block; }
 
     /* ── Thank You Section ── */
     .thankyou {
@@ -216,11 +210,6 @@
     /* ── Footer (identico a private-chef.html) ── */
     .footer {
       background-color: #47090F;
-      background-image:
-        linear-gradient(rgba(71,9,15,0.82), rgba(71,9,15,0.82)),
-        url('Foto/pattern_2-1-scaled.webp');
-      background-size: auto, 400px auto;
-      background-repeat: repeat, repeat;
       color: #F5F3EC;
       padding: 5rem 0 2.5rem;
     }
@@ -538,8 +527,7 @@
   </footer>
 
   <script>
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
+    // nav stays transparent on scroll
   </script>
 </body>
 </html>
