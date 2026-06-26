@@ -1,0 +1,3593 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <template id="__bundler_thumbnail" data-bg-color="#47090F">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1200" height="800" fill="#47090F"/>
+      <g transform="translate(600 360)" fill="none" stroke="#F5F3EC" stroke-width="14">
+        <circle r="120"/>
+        <circle r="46" fill="#F5F3EC" stroke="none"/>
+      </g>
+      <text x="600" y="600" text-anchor="middle" font-family="Georgia, serif" font-size="92" fill="#F5F3EC" letter-spacing="6">Dama24</text>
+    </svg>
+  </template>
+  <title>Dama24 Banqueting | Catering Aziendale Milano — Banqueting di Eccellenza</title>
+  <meta name="description" content="Dama24 Banqueting: catering aziendale a Milano per eventi corporate, convention, fiere e inaugurazioni. Banqueting di alta gamma con cucina sartoriale, mise en place d'autore e servizio impeccabile. Richiedi il tuo preventivo." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dama24 Banqueting | Catering Aziendale Milano" />
+  <meta property="og:description" content="Catering aziendale a Milano per eventi corporate, convention, fiere e inaugurazioni. Banqueting di alta gamma con cucina sartoriale e servizio impeccabile." />
+  <meta property="og:image" content="Immagini e video/catering.webp" />
+  <meta property="og:url" content="https://www.dama24banqueting.it/" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Dama24 Banqueting",
+    "description": "Catering aziendale a Milano per eventi corporate, convention, fiere e inaugurazioni.",
+    "url": "https://www.dama24banqueting.it/",
+    "email": "info@dama24banqueting.it",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Via della Chimica, 20/B",
+        "addressLocality": "Caponago",
+        "addressRegion": "MB",
+        "postalCode": "20867",
+        "addressCountry": "IT"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Leone XIII, 14",
+        "addressLocality": "Milano",
+        "postalCode": "20145",
+        "addressCountry": "IT"
+      }
+    ],
+    "servesCuisine": "Catering",
+    "areaServed": "Milano"
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet" />
+
+  <style>
+    /* =========================================
+       CSS Custom Properties
+    ========================================= */
+    :root {
+      --bordeaux:      #8C1822;
+      --bordeaux-dark: #47090F;
+      --black:         #000000;
+      --ivory:         #F5F3EC;
+      --white:         #FFFFFF;
+      --taupe:         #AFA899;
+      --border:        rgba(0,0,0,0.08);
+      --border-dark:   rgba(255,255,255,0.10);
+
+      /* Aliases for backward compat */
+      --burgundy: #8C1822;
+      --cream:    #F5F3EC;
+      --mid-gray: #AFA899;
+
+      --font-display: 'Playfair Display', 'Times New Roman', serif;
+      --font-sub:     'Quicksand', system-ui, sans-serif;
+      --font-body:    'Glacial Indifference', system-ui, sans-serif;
+
+      /* Aliases */
+      --serif: 'Playfair Display', 'Times New Roman', serif;
+      --sans:  'Glacial Indifference', system-ui, sans-serif;
+
+      --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+    }
+
+    /* =========================================
+       Reset & Base
+    ========================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--black);
+      overflow-x: hidden;
+    }
+
+    img, video { max-width: 100%; display: block; }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+    }
+
+    /* =========================================
+       Global heading rule — tutti i titoli bold
+    ========================================= */
+    h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+
+    /* =========================================
+       Focus States (Accessibility)
+    ========================================= */
+    :focus-visible {
+      outline: 2px solid var(--burgundy);
+      outline-offset: 3px;
+    }
+
+    /* =========================================
+       Skip Link
+    ========================================= */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: var(--burgundy);
+      color: #F5F3EC;
+      padding: 0.5rem 1rem;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      z-index: 9999;
+      border-radius: 0 0 4px 4px;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* =========================================
+       Typography Helpers
+    ========================================= */
+    .label {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+    }
+
+    .display {
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+    }
+
+    .body-refined {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: 1.125rem;
+      line-height: 1.75;
+      color: var(--mid-gray);
+    }
+
+    /* =========================================
+       Layout
+    ========================================= */
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .container--narrow {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* =========================================
+       Buttons
+    ========================================= */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.625rem;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding: 1rem 2.25rem;
+      transition: all 0.35s var(--ease-out);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn--primary {
+      background: var(--burgundy);
+      color: #F5F3EC;
+    }
+    .btn--primary::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--black);
+      transform: translateX(-101%);
+      transition: transform 0.4s var(--ease-out);
+      z-index: 0;
+    }
+    .btn--primary span { position: relative; z-index: 1; }
+    .btn--primary:hover::after { transform: translateX(0); }
+
+    .btn--outline {
+      border: 1px solid var(--black);
+      color: var(--black);
+    }
+    .btn--outline:hover {
+      background: var(--black);
+      color: #F5F3EC;
+    }
+
+    .btn--outline-white {
+      border: 1px solid rgba(255,255,255,0.6);
+      color: #F5F3EC;
+    }
+    .btn--outline-white:hover {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    /* =========================================
+       Navigation
+    ========================================= */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.4rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s var(--ease-out), padding 0.4s var(--ease-out), box-shadow 0.4s;
+    }
+
+    .nav.scrolled {
+      background: rgba(245,243,236,0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 0.9rem 2rem;
+      box-shadow: 0 1px 24px rgba(0,0,0,0.07), 0 1px 0 var(--border);
+    }
+
+    .nav__logo {
+      height: 54px;
+      min-height: 11mm;
+      width: auto;
+      transition: opacity 0.3s;
+    }
+    .nav__logo:hover { opacity: 0.75; }
+
+    .nav__logo--white { display: block; }
+    .nav__logo--dark { display: none; }
+    .nav.scrolled .nav__logo--white { display: none; }
+    .nav.scrolled .nav__logo--dark { display: block; }
+
+    .nav__cta {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      color: #F5F3EC;
+      border: 1px solid rgba(255,255,255,0.5);
+      padding: 0.6rem 1.5rem;
+      transition: all 0.3s var(--ease-out);
+    }
+    .nav.scrolled .nav__cta {
+      background: var(--bordeaux);
+      border-color: var(--bordeaux);
+      color: #F5F3EC;
+    }
+    .nav__cta:hover {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      color: #F5F3EC;
+    }
+
+    /* =========================================
+       Hero
+    ========================================= */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero__media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero__video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(1,0,0,0.72) 0%,
+        rgba(1,0,0,0.55) 45%,
+        rgba(1,0,0,0.45) 100%
+      );
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 7rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero__label {
+      color: rgba(245,243,236,0.65);
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      display: block;
+    }
+
+    .hero__title {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: clamp(2.5rem, 5vw, 4.75rem);
+      line-height: 1.06;
+      color: #F5F3EC;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .hero__title em {
+      font-style: normal;
+      font-weight: 700;
+      color: inherit;
+    }
+
+    .hero__subtitle {
+      font-family: var(--font-sub);
+      font-weight: 700;
+      font-size: clamp(1rem, 1.5vw, 1.15rem);
+      color: rgba(245,243,236,0.72);
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+
+    .hero__discover {
+      display: inline-flex;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(245,243,236,0.55);
+      gap: 0.5rem;
+      transition: color 0.3s;
+    }
+    .hero__discover:hover { color: rgba(245,243,236,0.9); }
+
+    /* Hero form card */
+    .hero__form-col {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .hero__form-card {
+      background: linear-gradient(160deg, rgba(30,2,6,0.82) 0%, rgba(1,0,0,0.76) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.08);
+      padding: 2rem 2.5rem 1.5rem;
+      width: 100%;
+      max-width: 620px;
+    }
+
+    .hero__form-card .form__title {
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      font-weight: 700;
+      font-style: italic;
+      color: rgba(245,243,236,0.9);
+      margin-bottom: 0.875rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+      letter-spacing: -0.01em;
+    }
+
+    /* Dark form variant (hero) */
+    .form--dark {
+      background: transparent;
+      color: #F5F3EC;
+    }
+
+    .form--dark .form__title {
+      color: rgba(245,243,236,0.9);
+      border-bottom-color: rgba(255,255,255,0.10);
+    }
+
+    .form--dark .form__label {
+      color: rgba(245,243,236,0.65);
+    }
+
+    .form--dark .form__label abbr {
+      color: var(--burgundy);
+    }
+
+    .form--dark .form__input,
+    .form--dark .form__select,
+    .form--dark .form__textarea {
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(255,255,255,0.14);
+      border-bottom-color: rgba(255,255,255,0.22);
+      color: #F5F3EC;
+    }
+
+    .form--dark .form__input:hover,
+    .form--dark .form__select:hover,
+    .form--dark .form__textarea:hover {
+      border-color: rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.07);
+    }
+
+    .form--dark .form__input::placeholder,
+    .form--dark .form__select::placeholder,
+    .form--dark .form__textarea::placeholder {
+      color: rgba(245,243,236,0.4);
+    }
+
+    .form--dark .form__input:focus,
+    .form--dark .form__select:focus,
+    .form--dark .form__textarea:focus {
+      border-color: var(--burgundy);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .form--dark .form__select {
+      color: rgba(245,243,236,0.85);
+    }
+
+    .form--dark .form__select option {
+      background: #1a1a1a;
+      color: #F5F3EC;
+    }
+
+    .form--dark .form__select-wrap::after {
+      background: rgba(255,255,255,0.35);
+    }
+    .form--dark .form__select-wrap:focus-within::after {
+      background: var(--burgundy);
+    }
+
+    .form--dark .form__privacy {
+      background: rgba(255,255,255,0.03);
+      border-color: rgba(255,255,255,0.08);
+    }
+
+    .form--dark .form__privacy-text {
+      color: rgba(245,243,236,0.4);
+    }
+
+    .form--dark .form__privacy-text a {
+      color: rgba(245,243,236,0.7);
+    }
+    .form--dark .form__privacy-text a:hover {
+      color: #F5F3EC;
+    }
+
+    /* Trust elements */
+    .form__trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0;
+      margin-top: 0.875rem;
+      padding-top: 0.875rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .form__trust .trust-item {
+      flex: 0 0 50%;
+    }
+
+    .form--dark .form__trust {
+      border-top-color: rgba(255,255,255,0.08);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: var(--mid-gray);
+    }
+
+    .form--dark .trust-item {
+      color: rgba(245,243,236,0.4);
+    }
+
+    .trust-item::before {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      background: var(--burgundy);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpolyline points='2.5 8 6.5 12 13.5 4' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpolyline points='2.5 8 6.5 12 13.5 4' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+    }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 1;
+    }
+
+    .hero__scroll-line {
+      width: 1px;
+      height: 56px;
+      background: rgba(255,255,255,0.35);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero__scroll-line::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.85);
+      animation: scrollDown 2s var(--ease-in-out) infinite;
+    }
+
+    @keyframes scrollDown {
+      0%   { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+    }
+
+    /* =========================================
+       Section Utility
+    ========================================= */
+    .section {
+      padding: 6rem 0;
+    }
+
+    .section--cream {
+      background: var(--cream);
+    }
+
+    .section--dark {
+      background: var(--black);
+      color: #F5F3EC;
+    }
+
+    .section--warm {
+      background: var(--ivory);
+    }
+
+    .section__header {
+      margin-bottom: 4rem;
+    }
+
+    .section__header--center {
+      text-align: center;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4rem;
+    }
+
+    .section__eyebrow {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .section__title {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.12;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--black);
+      margin-bottom: 1.25rem;
+    }
+
+    .section--dark .section__title { color: #F5F3EC; }
+
+    .section__lead {
+      font-family: var(--font-sub);
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1.75;
+      color: var(--mid-gray);
+    }
+
+    .section--dark .section__lead { color: rgba(245,243,236,0.6); }
+
+    /* =========================================
+       Intro Strip
+    ========================================= */
+    .intro {
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .intro__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .intro__text .section__title {
+      margin-bottom: 1.5rem;
+    }
+
+    .intro__blockquote {
+      border-left: 1px solid var(--burgundy);
+      padding-left: 1.75rem;
+    }
+
+    .intro__quote {
+      font-family: var(--serif);
+      font-size: clamp(1.25rem, 2.2vw, 1.625rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.55;
+      color: var(--black);
+    }
+
+    .intro__quote-author {
+      display: block;
+      margin-top: 1rem;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mid-gray);
+    }
+
+    /* =========================================
+       Numeri
+    ========================================= */
+    .numeri {
+      background: linear-gradient(160deg, var(--ivory) 0%, #ece9e0 100%);
+    }
+
+    .numeri__quote {
+      margin-top: 1.75rem;
+      text-align: center;
+    }
+
+    .numeri__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      list-style: none;
+    }
+
+    .numeri__number--placeholder {
+      font-size: 1rem;
+      color: var(--taupe);
+      font-family: var(--sans);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+    }
+
+    .numeri__item {
+      padding: 3.5rem 2.5rem;
+      border-right: 1px solid var(--border);
+      text-align: center;
+      position: relative;
+    }
+    .numeri__item:last-child { border-right: none; }
+    .numeri__item:hover {
+      background: linear-gradient(160deg, rgba(255,255,255,0.7) 0%, rgba(240,237,229,0.9) 100%);
+      box-shadow: inset 0 -2px 0 var(--bordeaux);
+    }
+
+    .numeri__number {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: clamp(2.5rem, 4.5vw, 4rem);
+      line-height: 1;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+
+    .numeri__number sup {
+      font-size: 0.5em;
+      vertical-align: super;
+      color: var(--burgundy);
+    }
+
+    .numeri__note {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid-gray);
+    }
+
+    /* =========================================
+       Servizi
+    ========================================= */
+    .servizi__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+    }
+
+    .servizi__card {
+      padding: 3rem 1.5rem;
+      border-right: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+      background: var(--white);
+      transition: background 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out);
+    }
+    .servizi__card:last-child { border-right: none; }
+    .servizi__card:hover {
+      background: linear-gradient(160deg, var(--ivory) 0%, #ece9df 100%);
+      box-shadow: inset 0 -3px 0 var(--bordeaux);
+    }
+    .servizi__card:hover { background: var(--cream); }
+
+    .servizi__card-number {
+      font-family: var(--serif);
+      font-size: 0.875rem;
+      color: var(--taupe);
+      margin-bottom: 1.75rem;
+    }
+
+    .servizi__card-title {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: clamp(0.875rem, 1.2vw, 1.25rem);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+      color: var(--black);
+      margin-bottom: 1rem;
+    }
+
+    .servizi__card-body {
+      font-family: var(--font-sub);
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--black);
+    }
+
+    .servizi__card-tag {
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      border-bottom: 1px solid var(--burgundy);
+      padding-bottom: 1px;
+    }
+
+    .servizi__categorie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 0;
+      align-items: center;
+      margin-top: 1.25rem;
+    }
+
+    .servizi__cat {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid-gray);
+      padding: 0 0.75rem;
+    }
+    .servizi__cat:first-child { padding-left: 0; }
+
+    .servizi__cat-sep {
+      color: var(--burgundy);
+      font-size: 0.875rem;
+    }
+
+    /* =========================================
+       Why Choose Us
+    ========================================= */
+    .why {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 640px;
+    }
+
+    .why__visual {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.8s var(--ease-out);
+    }
+    .why__visual:hover .why__image { transform: scale(1.04); }
+
+    .why__content {
+      background: #F5F3EC;
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .why__content .section__title { color: var(--black); }
+    .why__content .section__eyebrow { color: var(--bordeaux); }
+
+    .why .btn--outline-white {
+      background: #8C1822;
+      border-color: #8C1822;
+      color: #F5F3EC;
+    }
+    .why .btn--outline-white:hover {
+      background: #000000;
+      border-color: #000000;
+      color: #F5F3EC;
+    }
+
+    .why__list {
+      list-style: none;
+      margin-top: 2.5rem;
+    }
+
+    .why__item {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: padding-left 0.3s var(--ease-out);
+    }
+    .why__item:hover { padding-left: 0.5rem; }
+    .why__item:first-child { border-top: 1px solid rgba(255,255,255,0.08); }
+
+    .why__item-icon {
+      width: 2px;
+      height: 100%;
+      background: var(--burgundy);
+      flex-shrink: 0;
+      align-self: stretch;
+      margin-top: 0.25rem;
+    }
+
+    .why__item-marker {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.1rem;
+    }
+    .why__item-marker::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--burgundy);
+    }
+
+    .why__item-title {
+      font-family: var(--serif);
+      font-size: 1.0625rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--black);
+      margin-bottom: 0.25rem;
+    }
+
+    .why__item-desc {
+      font-family: var(--font-sub);
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: rgba(0,0,0,0.6);
+      line-height: 1.6;
+    }
+
+    /* =========================================
+       Social Proof — Manifesto editoriale
+    ========================================= */
+    .social-proof {
+      padding: 6rem 0;
+      background: linear-gradient(180deg, #ece9e0 0%, var(--ivory) 60%, #f0ede5 100%);
+    }
+
+    /* Manifesto strip */
+    .manifesto {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .manifesto__inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .manifesto__label {
+      display: block;
+      margin-bottom: 2rem;
+      color: var(--burgundy);
+    }
+
+    .manifesto__quote {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(1.375rem, 2.5vw, 2rem);
+      line-height: 1.55;
+      color: var(--black);
+      margin-bottom: 1.5rem;
+      font-style: normal;
+    }
+
+    .manifesto__quote em {
+      font-style: italic;
+      color: var(--burgundy);
+    }
+
+    .manifesto__author {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--taupe);
+      font-style: normal;
+    }
+
+    /* Brand values */
+    .brand-values {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-value {
+      padding: 0 1.5rem;
+    }
+
+    .brand-value__word {
+      font-family: var(--serif);
+      font-size: clamp(1.125rem, 2vw, 1.5rem);
+      font-weight: 700;
+      color: var(--black);
+      letter-spacing: 0.06em;
+    }
+
+    .brand-value--accent .brand-value__sep {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      color: var(--burgundy);
+    }
+
+    /* Testimonial placeholder */
+    .testimonials-placeholder {
+      padding: 3rem 0 1rem;
+      text-align: center;
+    }
+
+    .testimonials-placeholder__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .testimonials-placeholder__text {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--taupe);
+      max-width: 400px;
+      line-height: 1.65;
+    }
+
+    /* =========================================
+       Gallery
+    ========================================= */
+    .gallery {
+      padding: 6rem 0;
+    }
+
+    .gallery-inline__title {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 47px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--black);
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-inline__lead {
+      font-family: var(--font-sub);
+      font-size: 1rem;
+      color: var(--taupe);
+      font-style: italic;
+    }
+
+    .gallery__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 8px;
+      margin-top: 3.5rem;
+    }
+
+    .gallery__item {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .gallery__item:first-child {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+
+    .gallery__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s var(--ease-out);
+      aspect-ratio: 3/2;
+    }
+
+    .gallery__item:first-child .gallery__img {
+      aspect-ratio: unset;
+      height: 100%;
+      min-height: 480px;
+    }
+
+    .gallery__item:hover .gallery__img { transform: scale(1.06); }
+
+    .gallery__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.5rem;
+      background: linear-gradient(to top, rgba(1,0,0,0.55), transparent);
+      color: #F5F3EC;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity 0.3s var(--ease-out);
+    }
+    .gallery__item:hover .gallery__caption { opacity: 1; }
+
+    /* =========================================
+       Conversion / Form
+    ========================================= */
+    .conversion {
+      background: linear-gradient(160deg, #0d0305 0%, var(--bordeaux-dark) 35%, #080000 100%);
+      padding: 6rem 0;
+    }
+
+    .conversion__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .conversion__info {
+      padding-top: 0.5rem;
+    }
+
+    .conversion__info .section__title {
+      color: #F5F3EC;
+      margin-bottom: 1.5rem;
+    }
+
+    .conversion__lead {
+      font-family: var(--serif);
+      font-size: 1.0625rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(245,243,236,0.55);
+      margin-bottom: 2.5rem;
+    }
+
+    .conversion__details {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .conversion__detail {
+      display: flex;
+      gap: 0.875rem;
+      align-items: flex-start;
+    }
+
+    .conversion__detail-label {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      white-space: nowrap;
+      padding-top: 0.1rem;
+      min-width: 80px;
+    }
+
+    .conversion__detail-value {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(245,243,236,0.7);
+    }
+
+    .conversion__detail-value a:hover { color: #F5F3EC; }
+
+    /* Form */
+    .form {
+      padding: 3rem 3.25rem;
+    }
+
+    .form:not(.form--dark) {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .form__title {
+      font-family: var(--serif);
+      font-size: 1.375rem;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--black);
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 2px solid var(--bordeaux);
+      letter-spacing: -0.01em;
+    }
+
+    .form__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.875rem 1.5rem;
+    }
+
+    .form__field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .form__field--full {
+      grid-column: 1 / -1;
+    }
+
+    .form__label {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .form__label abbr {
+      text-decoration: none;
+      color: var(--burgundy);
+      font-size: 0.875rem;
+    }
+
+    .form__input,
+    .form__select,
+    .form__textarea {
+      font-family: var(--serif);
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: var(--black);
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,0.25);
+      border-bottom: 2px solid rgba(0,0,0,0.4);
+      padding: 0.6875rem 1rem;
+      width: 100%;
+      transition: border-color 0.2s, background 0.2s;
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 0;
+    }
+
+    .form__input::placeholder,
+    .form__select::placeholder,
+    .form__textarea::placeholder {
+      color: rgba(0,0,0,0.45);
+    }
+
+    .form__input:hover,
+    .form__select:hover,
+    .form__textarea:hover {
+      border-color: rgba(1,0,0,0.25);
+    }
+
+    .form__input:focus,
+    .form__select:focus,
+    .form__textarea:focus {
+      outline: none;
+      border-color: var(--burgundy);
+      border-bottom-color: var(--burgundy);
+      background: #fffcfa;
+    }
+
+    .form__textarea {
+      resize: none;
+      min-height: 96px;
+      line-height: 1.6;
+    }
+
+    .form__select-wrap {
+      position: relative;
+    }
+    .form__select-wrap::after {
+      content: '';
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 6px;
+      background: var(--mid-gray);
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      pointer-events: none;
+      transition: background 0.2s;
+    }
+    .form__select-wrap:focus-within::after {
+      background: var(--burgundy);
+    }
+
+    .form__select {
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form__privacy {
+      display: flex;
+      gap: 0.875rem;
+      align-items: flex-start;
+      padding: 1rem;
+      background: rgba(1,0,0,0.02);
+      border: 1px solid var(--border);
+    }
+
+    .form__checkbox {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+      cursor: pointer;
+      accent-color: var(--burgundy);
+    }
+
+    .form__privacy-text {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: var(--mid-gray);
+      line-height: 1.55;
+    }
+
+    .form__privacy-text a {
+      color: var(--black);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .form__privacy-text a:hover { color: var(--burgundy); }
+
+    .form__submit {
+      width: 100%;
+      padding: 1.15rem 1.5rem;
+      background: var(--burgundy);
+      color: #F5F3EC;
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      transition: background 0.3s var(--ease-out), letter-spacing 0.3s var(--ease-out);
+      margin-top: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      cursor: pointer;
+      border: none;
+    }
+    .form__submit::after {
+      content: '→';
+      font-size: 0.875rem;
+      transition: transform 0.3s var(--ease-out);
+      font-family: Georgia, serif;
+    }
+    .form__submit:hover {
+      background: var(--white);
+      color: var(--black);
+      letter-spacing: 0.22em;
+    }
+    .conversion .form__submit:hover {
+      background: var(--black);
+      color: #F5F3EC;
+    }
+    .form__submit:hover::after {
+      transform: translateX(4px);
+    }
+    .form__submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .form__submit:disabled::after {
+      display: none;
+    }
+
+    .form__label-opt {
+      font-weight: 300;
+      letter-spacing: 0;
+      text-transform: none;
+      opacity: 0.5;
+      font-size: 0.875rem;
+    }
+
+    .form__error {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      color: var(--burgundy);
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--burgundy);
+      background: rgba(140,24,34,0.04);
+      margin-top: 0.75rem;
+    }
+
+    /* Steps */
+    .steps {
+      list-style: none;
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .step {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      align-items: flex-start;
+    }
+    .step:first-child { border-top: 1px solid rgba(255,255,255,0.08); }
+
+    .step__num {
+      font-family: var(--serif);
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: var(--burgundy);
+      letter-spacing: 0.08em;
+      flex-shrink: 0;
+      padding-top: 0.2rem;
+      width: 28px;
+    }
+
+    .step__title {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 700;
+      color: #F5F3EC;
+      margin-bottom: 0.25rem;
+    }
+
+    .step__desc {
+      font-family: var(--font-sub);
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: rgba(245,243,236,0.45);
+      line-height: 1.6;
+    }
+
+    /* =========================================
+       FAQ
+    ========================================= */
+    .faq {
+      padding: 6rem 0;
+      background: linear-gradient(180deg, var(--white) 0%, var(--ivory) 100%);
+    }
+
+    .faq__list {
+      margin-top: 3.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .faq__item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq__question {
+      width: 100%;
+      text-align: left;
+      padding: 1.75rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--black);
+      cursor: pointer;
+      transition: color 0.25s;
+    }
+    .faq__question:hover { color: var(--burgundy); }
+
+    .faq__icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .faq__icon::before,
+    .faq__icon::after {
+      content: '';
+      position: absolute;
+      background: currentColor;
+      transition: transform 0.3s var(--ease-out);
+    }
+    .faq__icon::before {
+      width: 100%;
+      height: 1px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    .faq__icon::after {
+      width: 1px;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    .faq__item.open .faq__icon::after { transform: translateX(-50%) rotate(90deg); }
+
+    .faq__answer {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s var(--ease-out);
+    }
+
+    .faq__answer-inner {
+      padding-bottom: 1.75rem;
+      font-family: var(--font-sub);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.75;
+      color: var(--black);
+      max-width: 720px;
+    }
+
+    /* =========================================
+       Footer
+    ========================================= */
+    .footer {
+      background-color: #47090F;
+      background-image:
+        linear-gradient(rgba(71,9,15,0.82), rgba(71,9,15,0.82)),
+        url('Immagini e video/pattern_2-1-scaled.webp');
+      background-size: auto, 400px auto;
+      background-repeat: repeat, repeat;
+      color: #F5F3EC;
+      padding: 5rem 0 2.5rem;
+    }
+
+    .footer__top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer__logo {
+      height: 56px;
+      min-height: 12mm;
+      width: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer__tagline {
+      font-family: var(--serif);
+      font-size: 0.9375rem;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(245,243,236,0.75);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer__social {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .footer__social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,0.35);
+      color: rgba(245,243,236,0.8);
+      font-size: 0.875rem;
+      transition: all 0.3s;
+    }
+    .footer__social-link:hover {
+      border-color: var(--burgundy);
+      color: #F5F3EC;
+      background: var(--burgundy);
+    }
+
+    .footer__col-title {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(245,243,236,0.6);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer__nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+
+    .footer__nav a {
+      font-family: var(--serif);
+      font-size: 0.9375rem;
+      font-weight: 300;
+      color: rgba(245,243,236,0.8);
+      transition: color 0.25s;
+    }
+    .footer__nav a:hover { color: #F5F3EC; }
+
+    .footer__contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer__contact-list li {
+      font-family: var(--font-sub);
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: rgba(245,243,236,0.8);
+      line-height: 1.5;
+    }
+    .footer__contact-list a {
+      color: rgba(245,243,236,0.8);
+      transition: color 0.2s;
+    }
+    .footer__contact-list a:hover { color: #F5F3EC; }
+
+    .footer__address {
+      font-family: var(--serif);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgba(245,243,236,0.75);
+      line-height: 1.7;
+      font-style: normal;
+    }
+
+    .footer__address a {
+      color: rgba(245,243,236,0.8);
+      transition: color 0.25s;
+    }
+    .footer__address a:hover { color: #F5F3EC; }
+
+    .footer__trust-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 0;
+      align-items: center;
+      padding: 1.5rem 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      margin-bottom: 1.5rem;
+    }
+
+    .footer__trust-item {
+      font-family: var(--sans);
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(245,243,236,0.6);
+      padding: 0 1rem;
+    }
+    .footer__trust-item:first-child { padding-left: 0; }
+
+    .footer__trust-sep {
+      color: var(--burgundy);
+      font-size: 0.875rem;
+    }
+
+    .footer__trust-bar {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem 2.5rem;
+      padding: 1.75rem 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .footer__trust-bar .footer__trust-item {
+      font-family: var(--sans);
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(245,243,236,0.45);
+      padding: 0;
+    }
+
+    .footer__trust-bar .footer__trust-item::before {
+      content: '✓ ';
+      color: var(--bordeaux);
+    }
+
+    .footer__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.625rem;
+    }
+
+    .footer__legal {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: rgba(245,243,236,0.3);
+      text-align: center;
+    }
+
+    .footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.25rem 1.25rem;
+    }
+
+    .footer__links a {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      color: rgba(245,243,236,0.45);
+      transition: color 0.25s;
+    }
+    .footer__links a:hover { color: #F5F3EC; }
+
+    /* =========================================
+       Animations (IntersectionObserver)
+    ========================================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-stagger > * {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+    }
+
+    .reveal-stagger.visible > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0.05s; }
+    .reveal-stagger.visible > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.12s; }
+    .reveal-stagger.visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.19s; }
+    .reveal-stagger.visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.26s; }
+    .reveal-stagger.visible > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.33s; }
+    .reveal-stagger.visible > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.40s; }
+
+    /* =========================================
+       Divider
+    ========================================= */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 1.5rem auto;
+      max-width: 240px;
+    }
+    .divider__line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .divider__gem {
+      width: 5px;
+      height: 5px;
+      border: 1px solid var(--burgundy);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* =========================================
+       Responsive
+    ========================================= */
+    @media (max-width: 1024px) {
+      .numeri__grid { grid-template-columns: repeat(2, 1fr); }
+      .numeri__item:nth-child(2) { border-right: none; }
+      .numeri__item:nth-child(1),
+      .numeri__item:nth-child(2) { border-bottom: 1px solid var(--border); }
+
+      .servizi__grid { grid-template-columns: repeat(2, 1fr); }
+      .servizi__card:nth-child(2n) { border-right: none; }
+      .servizi__card:nth-child(1),
+      .servizi__card:nth-child(2) { border-bottom: 1px solid var(--border); }
+
+      .why { grid-template-columns: 1fr; }
+      .why__content { padding: 4rem 3rem; }
+
+      .conversion__inner { grid-template-columns: 1fr; gap: 3rem; }
+
+      .footer__top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+      .intro__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+
+      .testimonials { grid-template-columns: 1fr; gap: 0; }
+
+      .hero__content { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero__text, .hero__form-col { min-width: 0; }
+      .hero__form-col { justify-content: center; }
+      .hero__form-card { max-width: 100%; margin-left: auto; margin-right: auto; }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 4rem 0; }
+
+      /* Bottoni: niente a capo, riduci leggermente il font */
+      .btn { font-size: 0.78rem; letter-spacing: 0.1em; padding: 0.9rem 1.6rem; gap: 0.5rem; }
+
+      .hero__content { padding: 6rem 1.25rem 3rem; gap: 2rem; }
+
+      .numeri__grid { grid-template-columns: 1fr 1fr; }
+
+      .servizi__grid { grid-template-columns: 1fr; }
+      .servizi__card { border-right: none !important; }
+      .servizi__card:not(:last-child) { border-bottom: 1px solid var(--border); }
+      .servizi__card:last-child { border-bottom: none; }
+
+      .gallery__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .gallery__item:first-child {
+        grid-column: auto;
+        grid-row: auto;
+      }
+      .gallery__item:first-child .gallery__img { min-height: 260px; }
+
+      .why__content { padding: 3rem 1.5rem; }
+
+      .form { padding: 2rem 1.5rem; }
+      .form__grid { grid-template-columns: 1fr; }
+      /* Form centrato con respiro ai lati in mobile */
+      .conversion__inner > div { width: 100%; max-width: 460px; margin-left: auto; margin-right: auto; }
+      .hero__form-card { margin-left: auto; margin-right: auto; }
+
+      .footer__top { grid-template-columns: 1fr; }
+
+      .footer__bottom { align-items: center; }
+
+      .nav { padding: 1rem 1.25rem; }
+      .nav.scrolled { padding: 0.75rem 1.25rem; }
+      .nav__cta { white-space: nowrap; font-size: 0.7rem; letter-spacing: 0.1em; padding: 0.55rem 1rem; }
+    }
+
+    @media (max-width: 480px) {
+      .container, .container--narrow { padding: 0 1.5rem; }
+      .btn { font-size: 0.7rem; letter-spacing: 0.07em; padding: 0.85rem 1.25rem; }
+      .form__trust { grid-template-columns: 1fr; }
+    }
+
+    /* Spazio top = bottom in ogni sezione (azzera il margine del primo blocco) */
+    .social-proof .container > .loghi:first-child { margin-top: 0; }
+    .faq .section__header--center { padding-top: 0; }
+
+    /* =========================================
+       Raffinamento visivo — tipografia, accenti, profondità poetica
+    ========================================= */
+
+    /* 1. Tipografia — respiro generale */
+    body, p {
+      line-height: 1.8;
+    }
+
+    .hero__title,
+    .section__title {
+      font-feature-settings: "liga" 1, "kern" 1;
+      letter-spacing: 0.06em;
+    }
+
+    .section__eyebrow {
+      color: var(--bordeaux);
+      letter-spacing: 0.22em;
+    }
+
+    /* 2. Sezione Numeri — linea decorativa bordeaux sopra il titolo */
+    .section__header--center {
+      position: relative;
+      padding-top: 2.5rem;
+    }
+    .section__header--center::before {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 2px;
+      background: var(--bordeaux);
+      margin: 0 auto 1.5rem;
+    }
+
+    .numeri__note {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--taupe);
+    }
+
+    /* 3. Servizi — accent bordeaux a sinistra in hover, numero bordeaux */
+    .servizi__card-number {
+      color: var(--bordeaux);
+    }
+
+    .servizi__card:hover {
+      border-left: 3px solid var(--bordeaux);
+    }
+
+    /* 4. Why section — item borders su sfondo avorio */
+    .why__item {
+      border-bottom-color: rgba(0,0,0,0.10);
+    }
+    .why__item:first-child {
+      border-top-color: rgba(0,0,0,0.10);
+    }
+
+    /* 5. Manifesto / intro quote — virgolette decorative bordeaux semitrasparenti */
+    .manifesto__quote {
+      font-size: clamp(1.5rem, 2.8vw, 2.25rem);
+      font-style: italic;
+      position: relative;
+    }
+
+    .intro__quote {
+      position: relative;
+    }
+
+    .intro__quote::before,
+    .manifesto__quote::before {
+      content: '\201C';
+      font-family: var(--serif);
+      font-size: 5rem;
+      line-height: 1;
+      color: var(--bordeaux);
+      opacity: 0.6;
+      position: absolute;
+      top: -0.5rem;
+      left: -1.25rem;
+      pointer-events: none;
+    }
+
+    /* 6. Conversion section — pattern radiale bordeaux + step num vivido */
+    .conversion {
+      position: relative;
+      overflow: hidden;
+    }
+    .conversion::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(140,24,34,0.18) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .conversion__inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .step__num {
+      color: var(--bordeaux);
+      opacity: 1;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    /* 7. FAQ — colore bordeaux in hover, transizione bordo */
+    .faq__question:hover {
+      color: var(--bordeaux);
+    }
+    .faq__item {
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      transition: border-color 0.3s;
+    }
+    .faq__item:hover {
+      border-bottom-color: rgba(140,24,34,0.18);
+    }
+
+    /* 8. Footer — bordo top bordeaux */
+    .footer {
+      border-top: none;
+    }
+
+    /* 9. Generale */
+    section[id] {
+      scroll-margin-top: 80px;
+    }
+
+    .btn--outline:hover {
+      background: var(--bordeaux);
+      border-color: var(--bordeaux);
+      color: #F5F3EC;
+    }
+
+    /* Separatori caldi bordeaux */
+    .intro {
+      border-bottom-color: rgba(140,24,34,0.12);
+    }
+    .manifesto {
+      border-top-color: rgba(140,24,34,0.12);
+      border-bottom-color: rgba(140,24,34,0.12);
+    }
+    .divider__line {
+      background: rgba(140,24,34,0.12);
+    }
+
+    /* =========================================
+       Alternanza sfondi nero/avorio post-hero
+    ========================================= */
+
+    /* --- 1. NUMERI → avorio #F5F3EC --- */
+    .numeri {
+      background: #F5F3EC;
+    }
+    .numeri .section__title {
+      color: #000000;
+    }
+    .numeri .section__eyebrow {
+      color: #8C1822;
+    }
+    .numeri .section__lead {
+      color: rgba(0,0,0,0.6);
+    }
+    .numeri__item {
+      border-right-color: rgba(0,0,0,0.10);
+    }
+    .numeri__number {
+      color: #000000;
+    }
+    .numeri__quote .intro__quote {
+      color: #000000;
+    }
+    .numeri__quote .intro__quote-author {
+      color: rgba(0,0,0,0.45);
+    }
+    @media (max-width: 1024px) {
+      .numeri__item:nth-child(1),
+      .numeri__item:nth-child(2) {
+        border-bottom-color: rgba(0,0,0,0.10);
+      }
+    }
+
+    /* --- 2. SERVIZI → nero #000000 --- */
+    #servizi {
+      background: #000000;
+    }
+    #servizi .section__title {
+      color: #F5F3EC;
+    }
+    #servizi .section__eyebrow {
+      color: #8C1822;
+    }
+    #servizi .section__lead {
+      color: rgba(245,243,236,0.7);
+    }
+    #servizi .servizi__cat {
+      color: rgba(245,243,236,0.5);
+    }
+    #servizi .servizi__cat-sep {
+      color: rgba(245,243,236,0.35);
+    }
+    .servizi__grid {
+      border-color: rgba(255,255,255,0.10);
+    }
+    .servizi__card {
+      background: rgba(255,255,255,0.04);
+      border-right-color: rgba(255,255,255,0.10);
+    }
+    .servizi__card:hover {
+      background: rgba(255,255,255,0.08);
+      box-shadow: inset 0 -3px 0 var(--bordeaux);
+    }
+    .servizi__card-number {
+      color: #8C1822;
+    }
+    .servizi__card-title {
+      color: #F5F3EC;
+    }
+    .servizi__card-body {
+      color: rgba(245,243,236,0.75);
+    }
+    .servizi__card-tag {
+      color: #8C1822;
+      border-bottom-color: #8C1822;
+    }
+    #servizi .btn--outline {
+      border-color: rgba(255,255,255,0.5);
+      color: #F5F3EC;
+    }
+    #servizi .btn--outline:hover {
+      background: var(--bordeaux);
+      border-color: var(--bordeaux);
+      color: #F5F3EC;
+    }
+    @media (max-width: 1024px) {
+      .servizi__card:nth-child(1),
+      .servizi__card:nth-child(2) {
+        border-bottom-color: rgba(255,255,255,0.10);
+      }
+    }
+    @media (max-width: 768px) {
+      .servizi__card:not(:last-child) {
+        border-bottom-color: rgba(255,255,255,0.10);
+      }
+    }
+
+    /* --- 3. WHY CHOOSE US → sfondo avorio, pannello testo rimane nero --- */
+    .why {
+      background: #F5F3EC;
+    }
+
+    /* --- 4. SOCIAL PROOF → nero #000000 --- */
+    .social-proof {
+      background: #000000;
+    }
+    .social-proof .section__title {
+      color: #F5F3EC;
+    }
+    .manifesto {
+      border-top-color: rgba(255,255,255,0.10);
+      border-bottom-color: rgba(255,255,255,0.10);
+    }
+    .manifesto__label {
+      color: #8C1822;
+    }
+    .manifesto__quote {
+      color: #F5F3EC;
+    }
+    .manifesto__quote em {
+      color: var(--bordeaux);
+    }
+    .manifesto__author {
+      color: rgba(245,243,236,0.7);
+    }
+    .brand-values {
+      border-bottom-color: rgba(255,255,255,0.10);
+    }
+    .brand-value__word {
+      color: #F5F3EC;
+    }
+    .testimonials-placeholder__text {
+      color: rgba(245,243,236,0.5);
+    }
+    .gallery-inline__title {
+      color: #F5F3EC;
+    }
+    .gallery-inline__lead {
+      color: rgba(245,243,236,0.6);
+    }
+
+    /* --- 5. CONVERSION + FORM → avorio #F5F3EC --- */
+    .conversion {
+      background: #F5F3EC;
+    }
+    .conversion::before {
+      background: radial-gradient(ellipse at 50% 50%, rgba(140,24,34,0.08) 0%, transparent 70%);
+    }
+    .conversion__info .section__title {
+      color: #000000;
+    }
+    .conversion .section__eyebrow {
+      color: #8C1822 !important;
+    }
+    .conversion__lead {
+      color: rgba(0,0,0,0.65);
+    }
+    .step {
+      border-bottom-color: rgba(0,0,0,0.10);
+    }
+    .step:first-child {
+      border-top-color: rgba(0,0,0,0.10);
+    }
+    .step__title {
+      color: #000000;
+    }
+    .step__desc {
+      color: rgba(0,0,0,0.7);
+    }
+    .conversion__detail-label {
+      color: #8C1822;
+    }
+    .conversion__detail-value {
+      color: rgba(0,0,0,0.7);
+    }
+    .conversion__detail-value a {
+      color: rgba(0,0,0,0.7);
+    }
+    .conversion__detail-value a:hover {
+      color: #000000;
+    }
+    .conversion .form:not(.form--dark) {
+      background: #FFFFFF;
+    }
+    .conversion .form__submit:hover {
+      background: #000000;
+      color: #F5F3EC;
+    }
+
+    /* --- 6. FAQ → bordeaux scuro #47090F --- */
+    .faq {
+      background: #47090F;
+    }
+    .faq .section__title {
+      color: #F5F3EC;
+    }
+    .faq .section__eyebrow {
+      color: #8C1822;
+    }
+    .faq .section__header--center::before {
+      display: none;
+    }
+    .faq .section__lead {
+      color: rgba(245,243,236,0.7);
+    }
+    .faq__list {
+      border-top-color: rgba(255,255,255,0.10);
+    }
+    .faq__item {
+      border-bottom-color: rgba(255,255,255,0.10);
+    }
+    .faq__item:hover {
+      border-bottom-color: rgba(140,24,34,0.35);
+    }
+    .faq__question {
+      color: #F5F3EC;
+    }
+    .faq__question:hover {
+      color: var(--bordeaux);
+    }
+    .faq__answer-inner {
+      color: rgba(245,243,236,0.80);
+    }
+
+    /* ============================================================
+       MODIFICHE RICHIESTE — override finali
+    ============================================================ */
+
+    /* HERO — tag sotto la copy */
+    .hero__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.75rem;
+      margin-top: 0.25rem;
+    }
+    .hero__tags .trust-item {
+      color: rgba(245,243,236,0.82);
+      font-size: 0.8125rem;
+      letter-spacing: 0.05em;
+    }
+    .hero__tags .trust-item::before { background: #ffffff; }
+
+    /* NUMERI — banda scura stile screen */
+    .numeri__band {
+      background: #8c1822;
+      margin-top: 3.5rem;
+      padding: 3.75rem 0;
+    }
+    .numeri__band-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .numeri__stat {
+      text-align: center;
+      padding: 0.5rem 1.5rem;
+      border-right: 1px solid rgba(245,243,236,0.18);
+    }
+    .numeri__stat:last-child { border-right: none; }
+    .numeri__stat-num {
+      display: block;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(2.75rem, 5vw, 4.5rem);
+      line-height: 1;
+      color: #F5F3EC;
+      letter-spacing: 0.01em;
+    }
+    .numeri__stat-num sup {
+      font-size: 0.5em;
+      vertical-align: super;
+      font-weight: 400;
+    }
+    .numeri__stat-label {
+      display: block;
+      margin-top: 1rem;
+      font-family: var(--sans);
+      font-size: 0.8125rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,243,236,0.6);
+    }
+    @media (max-width: 768px) {
+      .numeri__band-inner { grid-template-columns: 1fr; gap: 2.5rem 0; }
+      .numeri__stat { border-right: none; }
+    }
+
+    /* CITAZIONE — banda editoriale scura tra loghi e gallery */
+    .citazione-dark {
+      background: #47090f;
+      padding: 5rem 0;
+      margin-top: 4rem;
+    }
+    .citazione-dark .section__header--center { padding-top: 2.5rem; margin-bottom: 0; }
+    .social-proof .citazione-dark .section__title { color: #F5F3EC; }
+    .citazione-dark .intro__quote { color: #F5F3EC; }
+    .citazione-dark .intro__quote-author { color: rgba(245,243,236,0.6); }
+
+    /* SERVIZI — sfondo chiaro + immagine per box */
+    #servizi { background: #F5F3EC; }
+    #servizi .section__title { color: #000000; }
+    #servizi .section__lead { color: rgba(0,0,0,0.6); }
+    #servizi .servizi__cat { color: var(--taupe); }
+    #servizi .servizi__cat-sep { color: #8C1822; }
+    #servizi .btn--outline { border-color: #000000; color: #000000; }
+    #servizi .btn--outline:hover { background: #8C1822; border-color: #8C1822; color: #F5F3EC; }
+    .servizi__grid {
+      border-color: rgba(0,0,0,0.10);
+      background: #F5F3EC;
+    }
+    .servizi__card {
+      background: #FFFFFF;
+      padding: 0;
+      border-right-color: rgba(0,0,0,0.10);
+      display: flex;
+      flex-direction: column;
+    }
+    .servizi__card:hover {
+      background: #FFFFFF;
+      box-shadow: inset 0 -3px 0 #8C1822;
+      border-left: none;
+    }
+    .servizi__card-media {
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      background: #ece9df;
+    }
+    .servizi__card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s var(--ease-out);
+    }
+    .servizi__card:hover .servizi__card-img { transform: scale(1.05); }
+    .servizi__card-content { padding: 2rem 1.5rem 2.5rem; }
+    .servizi__card-number { color: #8C1822; margin-bottom: 1rem; }
+    .servizi__card-title { color: #000000; }
+    .servizi__card-body { color: rgba(0,0,0,0.7); }
+    @media (max-width: 1024px) {
+      .servizi__card:nth-child(1),
+      .servizi__card:nth-child(2) { border-bottom-color: rgba(0,0,0,0.10); }
+    }
+
+    /* WHY — sfondo rosso, testo a sinistra, video al centro */
+    .why { background: #8C1822; }
+    .why__content { background: transparent; order: 1; }
+    .why__visual { order: 2; }
+    .why__content .section__title { color: #F5F3EC; }
+    .why .section__eyebrow { color: rgba(245,243,236,0.78); }
+    .why__item-title { color: #F5F3EC; }
+    .why__item-desc { color: rgba(245,243,236,0.72); }
+    .why__item { border-bottom-color: rgba(255,255,255,0.16); }
+    .why__item:first-child { border-top-color: rgba(255,255,255,0.16); }
+    .why .why__item-marker::before { background: #ffffff; }
+    .why__visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3.5rem;
+    }
+    .why__video {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.45);
+    }
+    .why .btn--outline-white {
+      background: transparent;
+      border-color: rgba(255,255,255,0.7);
+      color: #F5F3EC;
+    }
+    .why .btn--outline-white:hover {
+      background: #ffffff;
+      border-color: #ffffff;
+      color: #8C1822;
+    }
+    @media (max-width: 1024px) {
+      .why__visual { padding: 2.5rem 3rem 4rem; order: 2; }
+      .why__content { order: 1; }
+    }
+
+    /* SOCIAL PROOF (loghi + gallery) — sfondo chiaro */
+    .social-proof { background: #F5F3EC; }
+    .social-proof .section__title { color: #000000; }
+    .manifesto { border-top-color: rgba(0,0,0,0.10); border-bottom-color: rgba(0,0,0,0.10); }
+    .manifesto__quote { color: #000000; }
+    .manifesto__quote em { color: #8C1822; }
+    .manifesto__author { color: var(--taupe); }
+    .brand-value__word { color: #000000; }
+    .gallery-inline__title { color: #000000; }
+    .gallery-inline__lead { color: var(--taupe); }
+
+    /* LOGHI — griglia stile screen */
+    .loghi { text-align: center; margin-top: 3.5rem; }
+    .loghi__title {
+      font-family: var(--sans);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #8C1822;
+      margin-bottom: 2.5rem;
+    }
+    .loghi__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid rgba(0,0,0,0.10);
+      border-left: 1px solid rgba(0,0,0,0.10);
+    }
+    .loghi__cell {
+      border-right: 1px solid rgba(0,0,0,0.10);
+      border-bottom: 1px solid rgba(0,0,0,0.10);
+      min-height: 120px;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .loghi__name {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.375rem;
+      color: var(--taupe);
+    }
+    .loghi__name--accent {
+      background: #8C1822;
+      color: #F5F3EC;
+      padding: 0.1em 0.5em;
+    }
+    @media (max-width: 768px) {
+      .loghi__grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* GALLERY — griglia "dama" (scacchiera) */
+    .dama-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-top: 3rem;
+    }
+    .dama-cell {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      position: relative;
+    }
+    .dama-cell--img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s var(--ease-out);
+    }
+    .dama-cell--img:hover img { transform: scale(1.07); }
+    .dama-cell--solid {
+      background: #8C1822;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dama-cell--solid::after {
+      content: '';
+      width: 34%;
+      height: 34%;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.22);
+    }
+    @media (max-width: 640px) {
+      .dama-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* COME FUNZIONA — timeline verticale */
+    .conversion .steps {
+      margin-top: 2.5rem;
+      border: none;
+      padding-left: 0;
+    }
+    .conversion .step {
+      display: block;
+      position: relative;
+      border: none !important;
+      padding: 0 0 2.75rem 3.25rem;
+    }
+    .conversion .step:last-child { padding-bottom: 0; }
+    .conversion .step::before {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 36px;
+      bottom: -2px;
+      width: 2px;
+      background: rgba(140,24,34,0.25);
+    }
+    .conversion .step:last-child::before { display: none; }
+    .conversion .step__num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border-radius: 50%;
+      background: #8C1822;
+      color: #F5F3EC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--sans);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      z-index: 1;
+    }
+
+    /* ============================================================
+       MODIFICHE v2
+    ============================================================ */
+
+    /* Titoli — minuscolo, Playfair Display, senza glifi decorativi */
+    .hero__title,
+    .section__title,
+    .servizi__card-title,
+    .why__item-title,
+    .gallery-inline__title,
+    .loghi__title,
+    .faq__question,
+    .form__title,
+    .step__title {
+      font-family: var(--serif);
+      text-transform: none;
+      font-feature-settings: "liga" 0, "dlig" 0, "clig" 0;
+      font-variant-ligatures: none;
+    }
+    .hero__title,
+    .section__title { letter-spacing: 0; }
+
+    /* NUMERI — via lineetta + eyebrow "In numeri" */
+    .numeri .section__header--center { padding-top: 0; }
+    .numeri .section__header--center::before { display: none; }
+
+    /* SERVIZI — layout alternativo: card immagine con testo in overlay */
+    #servizi .servizi__grid { border: none; gap: 8px; background: transparent; }
+    #servizi .servizi__card {
+      background: #1a0205;
+      padding: 0;
+      border: none !important;
+      position: relative;
+      min-height: 440px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+    #servizi .servizi__card-media { position: absolute; inset: 0; aspect-ratio: auto; background: none; }
+    #servizi .servizi__card-img { width: 100%; height: 100%; object-fit: cover; }
+    #servizi .servizi__card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(20,2,4,0.92) 0%, rgba(20,2,4,0.45) 46%, rgba(20,2,4,0.04) 100%);
+      z-index: 1;
+    }
+    #servizi .servizi__card:hover { box-shadow: none; }
+    #servizi .servizi__card:hover .servizi__card-img { transform: scale(1.05); }
+    #servizi .servizi__card-content { position: relative; z-index: 2; padding: 1.75rem 1.5rem; }
+    #servizi .servizi__card-number { color: rgba(245,243,236,0.7); margin-bottom: 0.65rem; font-size: 1.15rem; }
+    #servizi .servizi__card-title { color: #F5F3EC; font-size: clamp(1.2rem, 1.8vw, 1.6rem); line-height: 1.18; min-height: 2.35em; display: flex; align-items: flex-end; }
+    #servizi .servizi__card-body { color: rgba(245,243,236,0.8); min-height: 5em; }
+
+    /* SERVIZI — categorie più leggibili */
+    #servizi .servizi__categorie { gap: 0.4rem 0; }
+    #servizi .servizi__cat {
+      color: #47090F;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: none;
+      font-size: 0.95rem;
+    }
+    #servizi .servizi__cat-sep { color: #8C1822; }
+
+    /* SERVIZI — bottone bordeaux brand */
+    #servizi .btn--outline {
+      background: #8C1822;
+      border-color: #8C1822;
+      color: #F5F3EC;
+    }
+    #servizi .btn--outline:hover {
+      background: #47090F;
+      border-color: #47090F;
+      color: #F5F3EC;
+    }
+
+    /* WHY — sfondo pattern scuro esteso a tutta la sezione (testo + video) */
+    .why { background-color: #47090F; background-image: linear-gradient(rgba(43,5,8,0.58), rgba(43,5,8,0.58)), url('Immagini e video/pattern_red.webp'); background-position: center; background-size: cover; background-repeat: no-repeat; }
+    .why__content { background: transparent; }
+    .why__content .section__title { color: #F5F3EC; }
+    .why .section__eyebrow { color: #F5F3EC; }
+    .why__item-title { color: #F5F3EC; text-transform: uppercase; letter-spacing: 0.04em; }
+    .why__item-desc { color: rgba(245,243,236,0.72); }
+    .why__item { border-bottom-color: rgba(255,255,255,0.16); }
+    .why__item:first-child { border-top-color: rgba(255,255,255,0.16); }
+    .why__visual { background: transparent; }
+    .why .btn--outline-white { background: #8C1822; border-color: #8C1822; color: #F5F3EC; }
+    .why .btn--outline-white:hover { background: #ffffff; border-color: #ffffff; color: #8C1822; }
+
+    /* LOGHI — titolo 47px Playfair Display */
+    .loghi__title {
+      font-family: var(--serif);
+      font-size: 47px;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: none;
+      color: #8C1822;
+      margin-bottom: 2.75rem;
+      line-height: 1.1;
+    }
+
+    /* GALLERY — scacchiera "dama" animata (3s) */
+    .dama-cell { position: relative; aspect-ratio: 1 / 1; overflow: hidden; }
+    .dama-cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s var(--ease-out); }
+    .dama-cell:hover img { transform: scale(1.06); }
+    .dama-cell__solid {
+      position: absolute;
+      inset: 0;
+      background: #8C1822 url('Immagini e video/pattern_gallery.webp') center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.9s ease;
+    }
+    .dama-cell__solid::after {
+      content: none;
+    }
+    .dama-cell.is-solid .dama-cell__solid { opacity: 1; }
+
+    /* COME FUNZIONA — form scuro come la hero */
+    .conversion .form--dark {
+      background: linear-gradient(160deg, rgba(30,2,6,0.96) 0%, #16060a 100%);
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.28);
+    }
+
+    /* ============================================================
+       MODIFICHE v3
+    ============================================================ */
+    /* Loghi clienti — dimensione uniforme */
+    .loghi__logo {
+      max-width: 72%;
+      max-height: 52px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      filter: grayscale(1);
+      opacity: 0.72;
+      transition: filter 0.35s var(--ease-out), opacity 0.35s var(--ease-out);
+    }
+    .loghi__cell:hover .loghi__logo { filter: grayscale(0); opacity: 1; }
+
+    /* WHY — niente pallini, solo testo */
+    .why .why__item { align-items: flex-start; }
+    .why .why__item-marker { display: none; }
+
+    /* FAQ — fondo più scuro del footer, testi color panna */
+    .faq { background: #2b0508; }
+    .faq .section__eyebrow,
+    .faq .section__title,
+    .faq__question { color: #fcf3ec; }
+    .faq .section__lead { color: rgba(252,243,236,0.7); }
+    .faq__answer-inner { color: rgba(252,243,236,0.82); }
+    .faq__question:hover { color: #fcf3ec; opacity: 0.72; }
+    .faq__list { border-top-color: rgba(252,243,236,0.18); }
+    .faq__item { border-bottom-color: rgba(252,243,236,0.14); }
+    .faq__item:hover { border-bottom-color: rgba(252,243,236,0.30); }
+  </style>
+<link id="gfont-Playfair-Display" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&amp;display=swap">
+</head>
+
+<body>
+  <a class="skip-link" href="#preventivo">Vai al modulo di preventivo</a>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigazione principale">
+    <a href="/" aria-label="Dama24 Banqueting — torna alla home">
+      <img src="Loghi/logo_banqueting-bianco-new.webp"
+           alt="Dama24 Banqueting"
+           class="nav__logo nav__logo--white" />
+      <img src="Loghi/logo_banqueting-nero-new.webp"
+           alt="Dama24 Banqueting"
+           class="nav__logo nav__logo--dark" />
+    </a>
+    <a href="#preventivo" class="nav__cta" aria-label="Richiedi un preventivo">Richiedi un preventivo</a>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" aria-label="Banner principale">
+    <div class="hero__media">
+      <video class="hero__video"
+             autoplay muted loop playsinline
+             aria-hidden="true"
+             poster="Immagini e video/catering.webp">
+        <source src="Immagini e video/video_banqueting e catering eventi.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <!-- Colonna testo -->
+      <div class="hero__text">
+        <span class="hero__label">Catering Aziendale · Milano</span>
+        <h1 class="hero__title" style="font-family: &quot;Playfair Display&quot;">
+          Catering aziendale<br/>a Milano <em style="font-family: &quot;Playfair Display&quot;">per eventi</em>
+        </h1>
+        <p class="hero__subtitle">
+          Coffee break, convention, inaugurazioni, meeting aziendali e banqueting su misura.<br/>
+          Ricevi una proposta personalizzata entro 24 ore.
+        </p>
+        <div class="hero__tags" aria-label="Perché sceglierci">
+          <span class="trust-item">Preventivo gratuito</span>
+          <span class="trust-item">Risposta entro 24 ore</span>
+          <span class="trust-item">Progetto su misura</span>
+          <span class="trust-item">Servizio completo</span>
+        </div>
+      </div>
+
+      <!-- Colonna form -->
+      <div class="hero__form-col">
+        <div class="hero__form-card">
+          <p class="form__title">Ricevi una proposta personalizzata</p>
+          <form class="form form--dark dama-form"
+                id="hero-form"
+                novalidate
+                aria-label="Form preventivo hero">
+            <div class="form__grid">
+              <div class="form__field">
+                <label class="form__label" for="h-nome">Nome <abbr title="Campo obbligatorio" aria-label="obbligatorio">*</abbr></label>
+                <input class="form__input" type="text" id="h-nome" name="nome"
+                       autocomplete="given-name" required aria-required="true"
+                       placeholder="Il tuo nome" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="h-azienda">Azienda <abbr title="Campo obbligatorio" aria-label="obbligatorio">*</abbr></label>
+                <input class="form__input" type="text" id="h-azienda" name="azienda"
+                       autocomplete="organization" required aria-required="true"
+                       placeholder="Nome azienda" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="h-email">Email <abbr title="Campo obbligatorio" aria-label="obbligatorio">*</abbr></label>
+                <input class="form__input" type="email" id="h-email" name="email"
+                       autocomplete="email" required aria-required="true"
+                       placeholder="La tua email" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="h-telefono">Telefono <abbr title="Campo obbligatorio" aria-label="obbligatorio">*</abbr></label>
+                <input class="form__input" type="tel" id="h-telefono" name="telefono"
+                       autocomplete="tel" required aria-required="true"
+                       placeholder="Numero di telefono" />
+              </div>
+
+              <div class="form__field form__field--full">
+                <label class="form__label" for="h-tipo-evento">Tipo evento <span class="form__label-opt">(facoltativo)</span></label>
+                <div class="form__select-wrap">
+                  <select class="form__select" id="h-tipo-evento" name="tipo_evento">
+                    <option value="">Seleziona il tipo di evento</option>
+                    <option value="banqueting">Banqueting aziendale</option>
+                    <option value="coffee-break">Coffee Break &amp; Lunch</option>
+                    <option value="convention">Convention &amp; Fiere</option>
+                    <option value="inaugurazione">Inaugurazione &amp; Opening</option>
+                    <option value="mixology">Mixology</option>
+                    <option value="event-styling">Event Styling</option>
+                    <option value="altro">Altro / Non so ancora</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__field form__field--full">
+                <label class="form__label" for="h-messaggio">Messaggio <span class="form__label-opt">(facoltativo)</span></label>
+                <textarea class="form__textarea" id="h-messaggio" name="messaggio"
+                          rows="3"
+                          placeholder="Data, numero ospiti, note..."></textarea>
+              </div>
+
+              <div class="form__field form__field--full">
+                <div class="form__privacy">
+                  <input class="form__checkbox" type="checkbox"
+                         id="h-privacy" name="privacy"
+                         required aria-required="true" />
+                  <label class="form__privacy-text" for="h-privacy">
+                    Ho letto l'<a href="/privacy-policy" target="_blank" rel="noopener">informativa privacy</a>
+                    e acconsento al trattamento dei miei dati (GDPR 679/2016). *
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__error" id="hero-form-message" role="alert" aria-live="polite" style="display:none;"></div>
+
+            <button type="submit" class="form__submit btn">
+              Ricevi una proposta personalizzata
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== NUMERI ==================== -->
+  <section class="numeri section" aria-label="I numeri di Dama24" style="padding: 0; margin: 0">
+    <div class="numeri__band" style="margin-top: 0; background-color: rgb(71, 9, 15)">
+      <div class="numeri__band-inner">
+        <div class="numeri__stat">
+          <span class="numeri__stat-num" data-count="72">0</span>
+          <span class="numeri__stat-label">Eventi realizzati</span>
+        </div>
+        <div class="numeri__stat">
+          <span class="numeri__stat-num" data-count="44">0</span>
+          <span class="numeri__stat-label">Realtà accompagnate</span>
+        </div>
+        <div class="numeri__stat">
+          <span class="numeri__stat-num" data-count="24" data-suffix="/7">0</span>
+          <span class="numeri__stat-label">Risposta garantita</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVIZI ==================== -->
+  <section class="section" id="servizi" aria-labelledby="servizi-title" style="margin: 0; border-width: 4px 0px 0px; border-style: solid; border-color: rgb(245, 243, 236)">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="label section__eyebrow">I nostri servizi</span>
+        <h2 class="section__title" id="servizi-title">
+          Servizi di catering aziendale<br/>per ogni tipo di evento
+        </h2>
+        <nav class="servizi__categorie" aria-label="Categorie servizi">
+          <span class="servizi__cat">Convention e Congressi</span>
+          <span class="servizi__cat-sep" aria-hidden="true">·</span>
+          <span class="servizi__cat">Fiere</span>
+          <span class="servizi__cat-sep" aria-hidden="true">·</span>
+          <span class="servizi__cat">Inaugurazioni Aziendali</span>
+          <span class="servizi__cat-sep" aria-hidden="true">·</span>
+          <span class="servizi__cat">Meeting Aziendali</span>
+          <span class="servizi__cat-sep" aria-hidden="true">·</span>
+          <span class="servizi__cat">Coffee Break Aziendali</span>
+        </nav>
+      </div>
+
+      <div class="servizi__grid reveal-stagger">
+        <article class="servizi__card">
+          <div class="servizi__card-media">
+            <img src="Immagini e video/catering.webp" alt="Catering aziendale Dama24" class="servizi__card-img" loading="lazy" />
+          </div>
+          <div class="servizi__card-content">
+            <p class="servizi__card-number">01</p>
+            <h3 class="servizi__card-title">Catering Aziendale</h3>
+            <p class="servizi__card-body">
+              Coffee break, lunch aziendali, inaugurazioni ed eventi corporate.
+            </p>
+          </div>
+        </article>
+
+        <article class="servizi__card">
+          <div class="servizi__card-media">
+            <img src="Immagini e video/catering2.webp" alt="Banqueting Dama24" class="servizi__card-img" loading="lazy" />
+          </div>
+          <div class="servizi__card-content">
+            <p class="servizi__card-number">02</p>
+            <h3 class="servizi__card-title">Banqueting</h3>
+            <p class="servizi__card-body">
+              Buffet, servizio placée, servizio a passaggio e formule completamente personalizzate.
+            </p>
+          </div>
+        </article>
+
+        <article class="servizi__card">
+          <div class="servizi__card-media">
+            <img src="Immagini e video/catering3.webp" alt="Bar catering Dama24" class="servizi__card-img" loading="lazy" />
+          </div>
+          <div class="servizi__card-content">
+            <p class="servizi__card-number">03</p>
+            <h3 class="servizi__card-title">Bar Catering</h3>
+            <p class="servizi__card-body">
+              Open bar, cocktail personalizzati e bartender professionisti.
+            </p>
+          </div>
+        </article>
+
+        <article class="servizi__card">
+          <div class="servizi__card-media">
+            <img src="Immagini e video/catering.webp" alt="Allestimenti e intrattenimento Dama24" class="servizi__card-img" loading="lazy" />
+          </div>
+          <div class="servizi__card-content">
+            <p class="servizi__card-number">04</p>
+            <h3 class="servizi__card-title">Allestimenti<br/>&amp; Intrattenimento</h3>
+            <p class="servizi__card-body">
+              Arredi, decorazioni, musica live, DJ set, foto e video per eventi aziendali.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="servizi__cta reveal" style="text-align:center; margin-top:3rem;">
+        <a href="#preventivo" class="btn btn--outline" aria-label="Parla con un consulente Dama24">
+          Parla con un nostro consulente
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE US ==================== -->
+  <section class="why" aria-labelledby="why-title">
+    <div class="why__visual">
+      <video class="why__video"
+             autoplay muted loop playsinline
+             aria-hidden="true"
+             poster="Immagini e video/catering2.webp">
+        <source src="Immagini e video/GIF MINI BURGERS (1).mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="why__content">
+      <span class="label section__eyebrow" style="color:#F5F3EC;">Perché Dama24</span>
+      <h2 class="section__title" id="why-title">
+        Perché le aziende<br/>scelgono Dama24
+      </h2>
+
+      <ul class="why__list reveal-stagger" aria-label="Punti di forza Dama24">
+        <li class="why__item">
+          <span class="why__item-marker" aria-hidden="true"></span>
+          <div>
+            <h3 class="why__item-title">Su misura</h3>
+            <p class="why__item-desc">
+              Ogni evento viene progettato sulle reali esigenze dell'azienda.
+            </p>
+          </div>
+        </li>
+        <li class="why__item">
+          <span class="why__item-marker" aria-hidden="true"></span>
+          <div>
+            <h3 class="why__item-title">Presenza costante</h3>
+            <p class="why__item-desc">
+              Un referente dedicato prima, durante e dopo l'evento.
+            </p>
+          </div>
+        </li>
+        <li class="why__item">
+          <span class="why__item-marker" aria-hidden="true"></span>
+          <div>
+            <h3 class="why__item-title">Team selezionato</h3>
+            <p class="why__item-desc">
+              Professionisti qualificati per eventi aziendali e corporate.
+            </p>
+          </div>
+        </li>
+        <li class="why__item">
+          <span class="why__item-marker" aria-hidden="true"></span>
+          <div>
+            <h3 class="why__item-title">Un solo partner</h3>
+            <p class="why__item-desc">
+              Food, beverage, allestimenti e coordinamento gestiti da un unico interlocutore.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div style="margin-top:2.5rem;">
+        <a href="#preventivo" class="btn btn--outline-white" aria-label="Richiedi una consulenza gratuita">
+          Richiedi una consulenza gratuita
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOCIAL PROOF ==================== -->
+  <section class="social-proof" aria-label="Le realtà che ci hanno scelto e gli eventi Dama24">
+    <div class="container">
+
+      <!-- Loghi / realtà clienti -->
+      <div class="loghi reveal" aria-label="Le realtà che ci hanno scelto">
+        <p class="loghi__title" style="color: rgb(71, 9, 15)">Le realtà che ci hanno scelto</p>
+        <div class="loghi__grid">
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/yamaha.webp" alt="Yamaha" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/cisalfa.webp" alt="Cisalfa Sport" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/curielmilano.webp" alt="Curiel Milano" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/granadoriodejaneiro.webp" alt="Granado Rio de Janeiro" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/solferinoparis.webp" alt="Solférino Paris" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/nactarome.webp" alt="Nactarome" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/museobagattivalsecchia.webp" alt="Museo Bagatti Valsecchi" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/advaliavision.webp" alt="Advalia Vision" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/gruppodimensioneambiente.webp" alt="Gruppo Dimensione Ambiente" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/mariosirtori.webp" alt="Mario Sirtori" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/unilar.webp" alt="Unicar" loading="lazy" /></div>
+          <div class="loghi__cell"><img class="loghi__logo" src="Loghi/rcm.webp" alt="RCM" loading="lazy" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Citazione editoriale -->
+    <div class="citazione-dark" style="margin: 64px 0px 0px; padding: 51px 0px 80px">
+      <div class="container">
+        <div class="section__header--center reveal">
+          <h2 class="section__title" id="numeri-title">L'eccellenza che si misura</h2>
+          <div class="numeri__quote reveal">
+            <blockquote class="intro__quote">
+              Ogni evento è un'opera composta.<br/>
+              Nulla è replicato: tutto è costruito con intenzione.
+            </blockquote>
+            <cite class="intro__quote-author">— Dama24 Banqueting</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Gallery eventi -->
+      <div class="gallery-inline reveal" style="margin-top:3rem; text-align:center;">
+        <h3 class="gallery-inline__title">Gli eventi organizzati da Dama24</h3>
+        <p class="gallery-inline__lead">Immagini che raccontano la cura sartoriale che Dama24 porta in ogni progetto.</p>
+        <div class="dama-grid" id="damaGrid">
+          <div class="dama-cell"><img src="Immagini e video/catering.webp" alt="Catering aziendale Dama24" loading="lazy" /><span class="dama-cell__solid" aria-hidden="true"></span></div>
+          <div class="dama-cell"><img src="Immagini e video/catering2.webp" alt="Mise en place Dama24" loading="lazy" /><span class="dama-cell__solid" aria-hidden="true"></span></div>
+          <div class="dama-cell"><img src="Immagini e video/catering3.webp" alt="Catering per convention Dama24" loading="lazy" /><span class="dama-cell__solid" aria-hidden="true"></span></div>
+          <div class="dama-cell"><img src="Immagini e video/catering.webp" alt="Allestimento evento Dama24" loading="lazy" /><span class="dama-cell__solid" aria-hidden="true"></span></div>
+          <div class="dama-cell"><img src="Immagini e video/catering2.webp" alt="Servizio banqueting Dama24" loading="lazy" /><span class="dama-cell__solid" aria-hidden="true"></span></div>
+          <div class="dama-cell"><img src="Immagini e video/catering3.webp" alt="Dettaglio catering Dama24" loading="lazy" /><span class="dama-cell__solid" aria-hidden="true"></span></div>
+          <div class="dama-cell"><img src="Immagini e video/catering.webp" alt="Catering aziendale Dama24" loading="lazy" /><span class="dama-cell__solid" aria-hidden="true"></span></div>
+          <div class="dama-cell"><img src="Immagini e video/catering2.webp" alt="Mise en place Dama24" loading="lazy" /><span class="dama-cell__solid" aria-hidden="true"></span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== CONVERSION / FORM ==================== -->
+  <section class="conversion" id="preventivo" aria-labelledby="form-title" style="margin: -95px 0px 0px">
+    <div class="container">
+      <div class="conversion__inner">
+        <div class="conversion__info">
+          <span class="label section__eyebrow" style="color:#8C1822;">Come funziona</span>
+          <h2 class="section__title" id="form-title">
+            Organizza il tuo prossimo evento aziendale<br/>con un partner specializzato
+          </h2>
+
+          <ol class="steps" aria-label="Come funziona il servizio Dama24">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">01</span>
+              <div class="step__content">
+                <h3 class="step__title">Raccontaci il tuo evento</h3>
+                <p class="step__desc">Compila il form con le informazioni essenziali sul tuo progetto.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">02</span>
+              <div class="step__content">
+                <h3 class="step__title">Ricevi una proposta personalizzata</h3>
+                <p class="step__desc">Entro 24 ore ti invieremo una proposta costruita sulle tue esigenze.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">03</span>
+              <div class="step__content">
+                <h3 class="step__title">Definiamo menù, servizio e allestimenti</h3>
+                <p class="step__desc">Lavoriamo insieme per perfezionare ogni dettaglio del tuo evento.</p>
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">04</span>
+              <div class="step__content">
+                <h3 class="step__title">Realizziamo il tuo evento</h3>
+                <p class="step__desc">Il giorno dell'evento, il nostro team è presente dalla preparazione all'ultimo saluto.</p>
+              </div>
+            </li>
+          </ol>
+
+        </div>
+
+        <div>
+          <form class="form form--dark dama-form" id="lead-form" novalidate aria-labelledby="form-title">
+            <h3 class="form__title">Richiedi il preventivo</h3>
+            <div class="form__grid">
+              <div class="form__field">
+                <label class="form__label" for="nome">Nome <abbr title="Campo obbligatorio" aria-label="obbligatorio">*</abbr></label>
+                <input class="form__input" type="text" id="nome" name="nome"
+                       autocomplete="given-name" required aria-required="true"
+                       placeholder="Il tuo nome" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="azienda">Azienda <abbr title="Campo obbligatorio" aria-label="obbligatorio">*</abbr></label>
+                <input class="form__input" type="text" id="azienda" name="azienda"
+                       autocomplete="organization" required aria-required="true"
+                       placeholder="Nome azienda" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="email">Email <abbr title="Campo obbligatorio" aria-label="obbligatorio">*</abbr></label>
+                <input class="form__input" type="email" id="email" name="email"
+                       autocomplete="email" required aria-required="true"
+                       placeholder="La tua email" />
+              </div>
+
+              <div class="form__field">
+                <label class="form__label" for="telefono">Telefono <abbr title="Campo obbligatorio" aria-label="obbligatorio">*</abbr></label>
+                <input class="form__input" type="tel" id="telefono" name="telefono"
+                       autocomplete="tel" required aria-required="true"
+                       placeholder="Numero di telefono" />
+              </div>
+
+              <div class="form__field form__field--full">
+                <label class="form__label" for="tipo-evento">Tipo evento <span class="form__label-opt">(facoltativo)</span></label>
+                <div class="form__select-wrap">
+                  <select class="form__select" id="tipo-evento" name="tipo_evento">
+                    <option value="">Seleziona il tipo di evento</option>
+                    <option value="banqueting">Banqueting aziendale</option>
+                    <option value="coffee-break">Coffee Break &amp; Lunch</option>
+                    <option value="convention">Convention &amp; Fiere</option>
+                    <option value="inaugurazione">Inaugurazione &amp; Opening</option>
+                    <option value="mixology">Mixology</option>
+                    <option value="event-styling">Event Styling</option>
+                    <option value="altro">Altro / Non so ancora</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__field form__field--full">
+                <label class="form__label" for="messaggio">Messaggio <span class="form__label-opt">(facoltativo)</span></label>
+                <textarea class="form__textarea" id="messaggio" name="messaggio"
+                          rows="4"
+                          placeholder="Raccontaci la data, il numero di ospiti, il tipo di evento e tutto ciò che ritieni utile."></textarea>
+              </div>
+
+              <div class="form__field form__field--full">
+                <div class="form__privacy">
+                  <input class="form__checkbox" type="checkbox"
+                         id="privacy" name="privacy"
+                         required aria-required="true" />
+                  <label class="form__privacy-text" for="privacy">
+                    Ho letto l'<a href="/privacy-policy" target="_blank" rel="noopener">informativa sulla privacy</a>
+                    e acconsento alla memorizzazione dei miei dati secondo il GDPR 679/2016. *
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__error" id="form-message" role="alert" aria-live="polite" style="display:none;"></div>
+
+            <button type="submit" class="form__submit btn">
+              Richiedi il tuo preventivo
+            </button>
+
+            <div class="form__trust" aria-label="Perché sceglierci">
+              <span class="trust-item">Preventivo gratuito</span>
+              <span class="trust-item">Risposta entro 24 ore</span>
+              <span class="trust-item">Nessun impegno</span>
+              <span class="trust-item">Consulenza dedicata</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="faq section" id="faq" aria-labelledby="faq-title" style="background-color: rgb(52, 6, 11)">
+    <div class="container--narrow">
+      <div class="section__header--center reveal">
+        <span class="label section__eyebrow">FAQ</span>
+        <h2 class="section__title" id="faq-title">Domande frequenti</h2>
+        <p class="section__lead">
+          Tutto quello che vuoi sapere sul banqueting aziendale Dama24 a Milano
+          prima di iniziare il tuo progetto.
+        </p>
+      </div>
+
+      <div class="faq__list" role="list">
+        <div class="faq__item" role="listitem">
+          <button class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-1-answer"
+                  id="faq-1">
+            Quali tipologie di eventi aziendali gestite a Milano?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" id="faq-1-answer" role="region" aria-labelledby="faq-1">
+            <p class="faq__answer-inner">
+              Il banqueting aziendale Dama24 abbraccia ogni formato: coffee break aziendali
+              e lunch per meeting, cene di gala, catering per convention e conferenze,
+              catering per fiere ed esposizioni, catering per inaugurazioni e opening, lanci di
+              prodotto. Ogni progetto viene costruito su misura attorno alla tua visione,
+              indipendentemente dalla scala.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-2-answer"
+                  id="faq-2">
+            Operate solo a Milano o anche in altre città?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" id="faq-2-answer" role="region" aria-labelledby="faq-2">
+            <p class="faq__answer-inner">
+              La nostra base operativa è a Milano — con sede anche a Caponago, in Brianza —
+              e operiamo su tutto il territorio nazionale per progetti che richiedono la nostra
+              presenza. Per il catering aziendale a Milano siamo operativi in ogni venue,
+              dal centro alle aree fieristiche e congressuali.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-3-answer"
+                  id="faq-3">
+            Come funziona il processo di preventivo?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" id="faq-3-answer" role="region" aria-labelledby="faq-3">
+            <p class="faq__answer-inner">
+              Compila il modulo con le informazioni essenziali sull'evento (data, luogo, numero di ospiti,
+              tipo di servizio desiderato). Entro 24 ore lavorative il nostro team ti risponde con
+              una proposta personalizzata. Da lì, lavoriamo insieme per perfezionare ogni dettaglio
+              fino a costruire un progetto che rispecchi esattamente la tua visione.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-4-answer"
+                  id="faq-4">
+            Gestite anche il catering per fiere ed esposizioni?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" id="faq-4-answer" role="region" aria-labelledby="faq-4">
+            <p class="faq__answer-inner">
+              Sì, il catering per fiere è uno dei nostri servizi core per il segmento aziendale.
+              Gestiamo la logistica complessa degli ambienti fieristici con strutture modulari,
+              personale formato e coordinamento totale, garantendo la stessa qualità di un evento
+              privato anche in contesti più articolati.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-5-answer"
+                  id="faq-5">
+            Offrite anche il servizio di personale in somministrazione?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" id="faq-5-answer" role="region" aria-labelledby="faq-5">
+            <p class="faq__answer-inner">
+              Sì. La divisione Dama24 Resources è pensata per valorizzare l'esperienza di hotel,
+              ristoranti, strutture ricettive ed eventi privati. Il personale è selezionato e
+              formato secondo gli standard Dama24 e si integra con naturalezza in ogni contesto,
+              portando professionalità, stile e discrezione.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__question"
+                  aria-expanded="false"
+                  aria-controls="faq-6-answer"
+                  id="faq-6">
+            È possibile personalizzare il menù per esigenze alimentari specifiche?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__answer" id="faq-6-answer" role="region" aria-labelledby="faq-6">
+            <p class="faq__answer-inner">
+              Assolutamente. La nostra cucina è "consapevole": ogni menù risponde alle esigenze
+              degli ospiti — intolleranze, preferenze vegetariane, vegane o culturali — senza
+              mai rinunciare all'eccellenza. La personalizzazione è parte integrante del nostro processo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <!-- Brand + social -->
+        <div>
+          <img src="Loghi/logo_banqueting-bianco-new.webp"
+               alt="Dama24 Banqueting"
+               class="footer__logo"
+               loading="lazy" />
+          <p class="footer__tagline">
+            Catering aziendale, banqueting ed eventi corporate a&nbsp;Milano.
+          </p>
+          <nav class="footer__social" aria-label="Seguici sui social">
+            <a href="https://www.instagram.com/dama24banqueting/"
+               class="footer__social-link"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Instagram Dama24 Banqueting">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61578804736969"
+               class="footer__social-link"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Facebook Dama24 Banqueting">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/108128492"
+               class="footer__social-link"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="LinkedIn Dama24 Banqueting">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Contatti -->
+        <div>
+          <p class="footer__col-title">Contatti</p>
+          <ul class="footer__contact-list">
+            <li><a href="mailto:info@dama24banqueting.it">info@dama24banqueting.it</a></li>
+          </ul>
+          <br/>
+          <address class="footer__address">
+            <strong style="font-style:normal; color:rgba(245,243,236,0.55); font-family:var(--sans); font-size:0.6875rem; letter-spacing:0.08em; text-transform:uppercase;">Sede operativa</strong><br/>
+            Via della Chimica, 20/B<br/>
+            20867 Caponago (MB)<br/><br/>
+            <strong style="font-style:normal; color:rgba(245,243,236,0.55); font-family:var(--sans); font-size:0.6875rem; letter-spacing:0.08em; text-transform:uppercase;">Sede legale</strong><br/>
+            Via Leone XIII, 14<br/>
+            20145 Milano
+          </address>
+        </div>
+
+        <!-- Informazioni legali -->
+        <div>
+          <p class="footer__col-title">Informazioni legali</p>
+          <nav aria-label="Link legali">
+            <ul class="footer__contact-list">
+              <li><a href="https://www.dama24banqueting.it/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></li>
+              <li><a href="https://www.dama24banqueting.it/cookie-policy" target="_blank" rel="noopener">Cookie Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+      <!-- Trust bar -->
+      <ul class="footer__trust-bar" aria-label="Garanzie di servizio">
+        <li class="footer__trust-item">Preventivo gratuito</li>
+        <li class="footer__trust-item">Risposta entro 24 ore</li>
+        <li class="footer__trust-item">Servizio personalizzato</li>
+        <li class="footer__trust-item">Un unico referente per il tuo evento</li>
+      </ul>
+
+      <!-- Bottom: HACCP + copyright -->
+      <div class="footer__bottom">
+        <nav class="footer__links" aria-label="Certificazioni">
+          <a href="/haccp">Autorizzazioni HACCP</a>
+        </nav>
+        <p class="footer__legal">© 2026 DAMA24 S.r.l. — P.IVA 13885090962</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script>
+    // Nav scroll state
+    const nav = document.getElementById('nav');
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Intersection Observer — reveal animations
+    const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => observer.observe(el));
+    } else {
+      revealEls.forEach(el => el.classList.add('visible'));
+    }
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq__item');
+        const answer = item.querySelector('.faq__answer');
+        const isOpen = item.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq__item.open').forEach(openItem => {
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq__answer').style.maxHeight = null;
+          openItem.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ── Shared form handler ──────────────────────────────────────────────
+    const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function validateForm(form) {
+      const msgEl = form.querySelector('.form__error');
+      let valid = true;
+
+      // Reset all borders
+      form.querySelectorAll('.form__input, .form__select, .form__textarea, .form__checkbox')
+          .forEach(el => el.style.borderColor = '');
+
+      // Check required fields
+      form.querySelectorAll('[required]').forEach(field => {
+        const empty = field.type === 'checkbox'
+          ? !field.checked
+          : !field.value.trim();
+
+        if (empty) {
+          field.style.borderColor = '#8c1822';
+          valid = false;
+        }
+      });
+
+      // Email format validation
+      const emailField = form.querySelector('input[type="email"]');
+      if (emailField && emailField.value.trim() && !EMAIL_RE.test(emailField.value.trim())) {
+        emailField.style.borderColor = '#8c1822';
+        valid = false;
+      }
+
+      if (!valid && msgEl) {
+        msgEl.style.cssText = [
+          'display:block',
+          'padding:0.75rem 1rem',
+          'margin-top:1rem',
+          'background:#fff0f0',
+          'border:1px solid #8c1822',
+          'font-family:var(--sans)',
+          'font-size:0.75rem',
+          'color:#8c1822'
+        ].join(';');
+        const hasInvalidEmail = emailField && emailField.value.trim() && !EMAIL_RE.test(emailField.value.trim());
+        msgEl.textContent = hasInvalidEmail
+          ? 'Inserisci un indirizzo email valido.'
+          : 'Compila tutti i campi obbligatori contrassegnati con *.';
+      }
+
+      return valid;
+    }
+
+    document.querySelectorAll('.dama-form').forEach(form => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!validateForm(form)) return;
+
+        const submitBtn = form.querySelector('.form__submit');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Invio in corso...';
+
+        // In production: replace with actual form submission (AJAX/fetch to backend)
+        setTimeout(() => {
+          window.location.href = 'grazie.html';
+        }, 600);
+      });
+    });
+
+    // Gallery "dama" — scambio aree scacchiera ogni 3 secondi
+    const damaGrid = document.getElementById('damaGrid');
+    if (damaGrid) {
+      const cells = Array.from(damaGrid.children);
+      const getCols = () => {
+        const tpl = getComputedStyle(damaGrid).gridTemplateColumns;
+        const n = tpl ? tpl.split(' ').filter(Boolean).length : 4;
+        return n || 4;
+      };
+      let phase = 0;
+      const applyDama = () => {
+        const cols = getCols();
+        cells.forEach((cell, i) => {
+          const r = Math.floor(i / cols), c = i % cols;
+          cell.classList.toggle('is-solid', (r + c + phase) % 2 === 0);
+        });
+      };
+      applyDama();
+      window.addEventListener('resize', applyDama);
+      setInterval(() => { phase ^= 1; applyDama(); }, 3000);
+    }
+
+    // Numeri — counter animato all'ingresso in viewport
+    const counters = document.querySelectorAll('.numeri__stat-num[data-count]');
+    const runCount = el => {
+      const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || '';
+      const dur = 1600, start = performance.now();
+      const step = now => {
+        const p = Math.min((now - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(eased * target) + suffix;
+        if (p < 1) requestAnimationFrame(step); else el.textContent = target + suffix;
+      };
+      requestAnimationFrame(step);
+    };
+    if ('IntersectionObserver' in window) {
+      const co = new IntersectionObserver((es) => {
+        es.forEach(e => { if (e.isIntersecting) { runCount(e.target); co.unobserve(e.target); } });
+      }, { threshold: 0.6 });
+      counters.forEach(c => co.observe(c));
+    } else {
+      counters.forEach(runCount);
+    }
+  </script>
+</body>
+</html>
