@@ -331,10 +331,11 @@
     }
 
     .hero__video {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center;
+      overflow: hidden;
     }
 
     .hero__overlay {
@@ -2744,12 +2745,13 @@
   <!-- ==================== HERO ==================== -->
   <section class="hero" aria-label="Banner principale">
     <div class="hero__media">
-      <video class="hero__video"
-             autoplay muted loop playsinline
-             aria-hidden="true"
-             poster="Immagini e video/catering.webp">
-        <source src="Immagini e video/video_banqueting e catering eventi.mp4" type="video/mp4" />
-      </video>
+      <div class="hero__video" aria-hidden="true">
+        <iframe src="https://player.vimeo.com/video/1204810708?autoplay=1&muted=1&loop=1&background=1&quality=1080p"
+                frameborder="0"
+                allow="autoplay; fullscreen"
+                allowfullscreen
+                style="position:absolute;top:50%;left:50%;width:177.78vh;min-width:100%;height:56.25vw;min-height:100%;transform:translate(-50%,-50%);pointer-events:none;"></iframe>
+      </div>
       <div class="hero__overlay"></div>
     </div>
 
